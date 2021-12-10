@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipo-peliculas",
+      "handler": "tipo-pelicula.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-peliculas/count",
+      "handler": "tipo-pelicula.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-peliculas/:id",
+      "handler": "tipo-pelicula.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-peliculas",
+      "handler": "tipo-pelicula.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipo-peliculas/:id",
+      "handler": "tipo-pelicula.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipo-peliculas/:id",
+      "handler": "tipo-pelicula.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

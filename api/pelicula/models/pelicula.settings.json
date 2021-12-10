@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "peliculas",
+  "info": {
+    "name": "Pelicula",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "peliculaURL": {
+      "type": "text"
+    },
+    "comentarios": {
+      "type": "text"
+    },
+    "Disponible": {
+      "type": "boolean"
+    },
+    "tipo_pelicula": {
+      "via": "peliculas",
+      "model": "tipo-pelicula"
+    },
+    "anio": {
+      "type": "integer"
+    },
+    "ImagenP": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_peliculas",
+  "info": {
+    "name": "tipoPelicula",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Categoria": {
+      "type": "string"
+    },
+    "peliculas": {
+      "via": "tipo_pelicula",
+      "collection": "pelicula"
+    }
+  }
+}
